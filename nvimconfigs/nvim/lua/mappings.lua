@@ -18,4 +18,14 @@ M.dap = {
   }
 }
 
+M.terminal = {
+  t = {
+    -- Directly jump to windows from terminal mode
+    ["<C-h>"] = { "<C-\\><C-n><C-w>h", "Window left" },
+    ["<C-l>"] = { "<C-\\><C-n><C-w>l", "Window right" },
+    ["<C-j>"] = { "<C-\\><C-n><C-w>j", "Window down" },
+    ["<C-k>"] = { "<C-\\><C-n><C-w>k", "Window up" },
+  }
+}
+
 return M
